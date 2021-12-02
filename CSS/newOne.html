@@ -87,15 +87,31 @@
         }
         */
 
-        /*CSS Combinators*/
-        header h1{
+        /*CSS Combinators
+        body header h1{
             color: white;
             background-color: green;
+        }*/
+
+        /*Child Combinator
+        header > h1{
+            color: red;
+        }
+        Direct Child
+        header > section > h1{
+            color: red;
+        }
+
+        Adjacent Combinator
+        */
+
+        h1 + p {
+            color: green;
         }
 
     </style>
 
-    <link rel="stylesheet" href="assetes/css/style.css">
+    <link href="assetes/css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -104,45 +120,48 @@
     <section>
         <h1>Hi Kave</h1>
     </section>
-<Section>
-    <a href="#sd">Go To IJSE</a>
-</Section>
+    <Section>
+        <a href="#sd">Go To IJSE</a>
+    </Section>
 
-<!--In Line Styles-->
-<h1 id="my_Header" class="selected_Para">Hello</h1>
-<h1 class="selected_Para">My World</h1>
-<h2>Hello World</h2>
-<h2>Rasintha Dilshan</h2>
+    <!--In Line Styles-->
+    <h1 class="selected_Para" id="my_Header">Hello</h1>
+    <h1 class="selected_Para">My World</h1>
+    <h2>Hello World</h2>
+    <h2>Rasintha Dilshan</h2>
 
-<p class="selected_Para">Lorem ipsum dolor sit amet,<a href="mailto:rasinthadilshan0@gmail.com">Click to Send us a Mail.</a> consectetur
-    adipisicing elit. Exercitationem ipsa natus nostrum
-    temporibus. Atque autem beatae dolores excepturi facere, facilis laboriosam, magni modi mollitia
-    nostrum perspiciatis quas quisquam ratione similique.</p>
+    <p class="selected_Para">Lorem ipsum dolor sit amet,<a href="mailto:rasinthadilshan0@gmail.com">Click to Send us a
+        Mail.</a> consectetur
+        adipisicing elit. Exercitationem ipsa natus nostrum
+        temporibus. Atque autem beatae dolores excepturi facere, facilis laboriosam, magni modi mollitia
+        nostrum perspiciatis quas quisquam ratione similique.</p>
+    <h1>My Name</h1>
+    <p class="selected_Para">Lorem ipsum dolor sit amet,<a href="tell:+94762416064">Call us</a> consectetur adipisicing
+        elit. Exercitationem ipsa
+        natus nostrum
+        temporibus. Atque autem beatae dolores excepturi facere, facilis laboriosam, magni modi mollitia
+        nostrum <b>perspiciatis</b> quas quisquam ratione <a
+                download="assets/icon/Black_Simple_Motors_Automotive_logo__1_-removebg-preview.png"
+                href="assets/icon/Black_Simple_Motors_Automotive_logo__1_-removebg-preview.png">Download Image</a>Download
+        Image</p>
 
-<p class="selected_Para">Lorem ipsum dolor sit amet,<a href="tell:+94762416064">Call us</a> consectetur adipisicing elit. Exercitationem ipsa
-    natus nostrum
-    temporibus. Atque autem beatae dolores excepturi facere, facilis laboriosam, magni modi mollitia
-    nostrum <b>perspiciatis</b> quas quisquam ratione <a
-            href="assets/icon/Black_Simple_Motors_Automotive_logo__1_-removebg-preview.png"
-            download="assets/icon/Black_Simple_Motors_Automotive_logo__1_-removebg-preview.png">Download Image</a>Download
-    Image</p>
+    <p class="selected_Para">Lorem ipsum dolor sit amet,you can join with <abbr
+            title="Institute of Java and Software Engineering">IJSE</abbr>.
+        consectetur adipisicing elit. Exercitationem ipsa natus nostrum
+        temporibus. Atque autem beatae dolores excepturi facere, facilis laboriosam, magni modi mollitia
+        nostrum perspiciatis quas quisquam ratione similique.</p>
 
-<p class="selected_Para">Lorem ipsum dolor sit amet,you can join with <abbr title="Institute of Java and Software Engineering">IJSE</abbr>.
-    consectetur adipisicing elit. Exercitationem ipsa natus nostrum
-    temporibus. Atque autem beatae dolores excepturi facere, facilis laboriosam, magni modi mollitia
-    nostrum perspiciatis quas quisquam ratione similique.</p>
+    <p>Lorem ipsum dolor sit amet,you can join <dfn id="sd">IJSE</dfn> with consectetur adipisicing elit. Exercitationem
+        ipsa natus nostrum
+        temporibus. Atque autem beatae dolores excepturi facere, facilis laboriosam, magni modi mollitia
+        nostrum perspiciatis quas quisquam ratione similique.</p>
 
-<p>Lorem ipsum dolor sit amet,you can join <dfn id="sd">IJSE</dfn> with consectetur adipisicing elit. Exercitationem
-    ipsa natus nostrum
-    temporibus. Atque autem beatae dolores excepturi facere, facilis laboriosam, magni modi mollitia
-    nostrum perspiciatis quas quisquam ratione similique.</p>
-
-<p>Lorem ipsum dolor sit amet,
-    <mark style="background-color: red">you can join with consectetur</mark>
-    adipisicing elit. Exercitationem ipsa natus nostrum
-    temporibus. Atque autem beatae dolores excepturi facere, facilis laboriosam, magni modi mollitia
-    nostrum perspiciatis quas <kbd>Ctrl+Shift</kbd> quisquam ratione similique.
-</p>
+    <p>Lorem ipsum dolor sit amet,
+        <mark style="background-color: red">you can join with consectetur</mark>
+        adipisicing elit. Exercitationem ipsa natus nostrum
+        temporibus. Atque autem beatae dolores excepturi facere, facilis laboriosam, magni modi mollitia
+        nostrum perspiciatis quas <kbd>Ctrl+Shift</kbd> quisquam ratione similique.
+    </p>
 </header>
 <p>Lorem ipsum dolor sit amet, <q cite="https://ijse.lk">you can join with</q>. consectetur adipisicing elit.
     Exercitationem ipsa natus nostrum
@@ -164,7 +183,10 @@
     .
 </p>
 
-<p>Loremipsumdolorsitametyoucanjoinwi<wbr>thconsecteturadipisicingelitdewesdsfrtddgbtgefsdsrwesdrwedesd</p>
+<p>Loremipsumdolorsitametyoucanjoinwi
+    <wbr>
+    thconsecteturadipisicingelitdewesdsfrtddgbtgefsdsrwesdrwedesd
+</p>
 
 <p><var>l</var><var>+</var><var>z</var><var>=</var><var>123</var></p>
 
