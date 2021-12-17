@@ -5,11 +5,14 @@
     <title>Case 1 (Using Absolute & Relative)</title>
     <link href="assets/CSS/normalize.css" rel="stylesheet">
     <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="../normalize.css" rel="stylesheet">
     <style>
+        /*header start*/
         header{
             position: relative;
             /*x patta / y patta / blue size / kochchra pathirnwda kiyala / colr*/
             box-shadow: 2px 6px 9px 2px darkgray;
+            height: 80px;
         }
 
         header>img{
@@ -38,13 +41,37 @@
             cursor: pointer;
             color: red;
         }
+        /*header end*/
+
+        /*main start*/
+        body>main{
+            position: relative;
+        }
+        main>nav{
+            width: 200px;
+            background-color: deeppink;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+        main>section{
+            margin-left: 200px;
+            padding: 5px;
+        }
+        /*main end*/
+
+        /*footer start*/
+
+
+        /*footer end*/
+
     </style>
 </head>
 <body>
 
 <header>
     <!--logo-->
-    <img alt="ijse" src="assets/images/ijse.png">
+    <img alt="ijse" src="../ijse.png">
     <ul>
         <li>Home</li>
         <li>Service</li>
