@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 1 (Using Absolute & Relative)</title>
+    <link href="assets/CSS/normalize.css" rel="stylesheet">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="../normalize.css" rel="stylesheet">
+    <link href="../fonts/css/all.css" rel="stylesheet">
+    <style>
+
+        body>main>section{
+            position: relative;
+            height: 300px;
+
+        }
+
+        body>main>section>div{
+            position: absolute;
+            height: 100%;
+            width: calc(100%/4);
+            border: 2px solid red;
+        }
+
+        body>main>section>div:nth-child(1){
+            left: 0;
+        }
+
+        body>main>section>div:nth-child(2){
+            left: calc(100%/4);
+        }
+
+        body>main>section>div:nth-child(3){
+            left: calc((100%/4)*2);
+        }
+
+        body>main>section>div:nth-child(4){
+            left: calc((100%/4)*3);
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+<footer>
+
+</footer>
+</body>
+</html>
