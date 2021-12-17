@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 1 (Using Absolute & Relative)</title>
+    <link href="assets/CSS/normalize.css" rel="stylesheet">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <style>
+        header{
+            position: relative;
+            /*x patta / y patta / blue size / kochchra pathirnwda kiyala / colr*/
+            box-shadow: 2px 6px 9px 2px darkgray;
+        }
+
+        header>img{
+            width: 150px;
+            margin: 5px;
+        }
+
+        header>ul{
+            position: absolute;
+            right: 30px;
+            bottom: 0px;
+            top: 10px;
+            margin: auto;
+            height: 40px;
+            font-size: 20px;
+            font-family: "Berlin Sans FB Demi" , cursive;
+            list-style: none;
+        }
+
+        header>ul>li{
+            padding: 0 10px 0 10px;
+            display: inline-block;
+        }
+
+        header>ul>li:hover{
+            cursor: pointer;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!--logo-->
+    <img alt="ijse" src="assets/images/ijse.png">
+    <ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Contacts</li>
+        <li>About Us</li>
+    </ul>
+</header>
+
+<main>
+    <nav>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Contacts</li>
+        <li>About Us</li>
+    </nav>
+    <section>
+        <!--full images-->
+        <section>
+            <!--image 1-->
+            <div></div>
+            <!--image 2-->
+            <div></div>
+            <!--image 3-->
+            <div></div>
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque consectetur consequuntur eius eos
+            eveniet ipsum iure magnam mollitia nemo, numquam perferendis quasi velit. Aliquam architecto eius expedita
+            fugit perspiciatis?</p>
+        <p>Aliquid aut autem commodi, consequatur cumque dicta, dolore eius error fugit illum laboriosam laborum maiores
+            modi neque nihil nobis odio officia quis ratione saepe sed sit, sunt tempora velit voluptatibus.</p>
+        <p>Consequuntur, debitis dicta eum odit optio quidem voluptates. Amet aperiam aut earum illo libero minima,
+            natus obcaecati officia optio possimus quam voluptatibus voluptatum. Autem dicta, eaque excepturi illo ipsa
+            totam?</p>
+        <p>At ipsa quae voluptatem? Deleniti dolore et fugit ipsa ipsam placeat quam vel! Ad deleniti, earum enim, fugit
+            in ipsum libero maiores neque, officia omnis pariatur perspiciatis quasi reiciendis sapiente!</p>
+        <p>A aliquam commodi consectetur debitis, delectus deleniti distinctio eaque error excepturi iure maiores neque
+            nesciunt, nostrum nulla odio quaerat reprehenderit saepe sit! Assumenda, hic iure maxime odit quae
+            repudiandae rerum!</p>
+        <p>Accusamus amet beatae cum deserunt dicta dignissimos doloremque enim, est fuga fugit illum inventore ipsa
+            libero magni nisi officia perspiciatis placeat qui quis quos, repellendus saepe, tempora unde voluptate
+            voluptatibus.</p>
+        <p>A culpa dicta, dolor enim eos explicabo illo ipsum laudantium obcaecati odio pariatur, suscipit velit vero.
+            Animi at dignissimos hic iste nemo nostrum quas ratione tempore, voluptatem voluptatum? Culpa, et!</p>
+        <p>Animi aut consectetur cum deserunt dolore fugit iusto labore modi necessitatibus obcaecati, omnis sequi
+            similique tempore! Aut reiciendis sapiente voluptates voluptatibus. Ab architecto dicta eligendi eos
+            inventore provident quisquam ullam.</p>
+    </section>
+</main>
+
+<footer>
+    <p>Developed By IJSE</p>
+</footer>
+</body>
+</html>
