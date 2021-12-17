@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex-Box Layout Directions</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <style>
+        body>section{
+            height: 300px;
+            border: 1px solid red;
+            position: relative;
+            display: flex;
+            flex-direction: column-reverse;/*row/column*/
+        }
+
+        section>div{
+            border: 1px solid green;
+            height: 100%;
+            width: 25%;
+        }
+
+        section>div:nth-child(1){
+
+        }
+        section>div:nth-child(2){
+
+        }
+
+        section>div:nth-child(3){
+
+        }
+
+        section>div:nth-child(4){
+
+        }
+
+    </style>
+</head>
+<body>
+<h1>Flex-Box Layout (New Layouts)</h1>
+<section>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+</section>
+
+</body>
+</html>
