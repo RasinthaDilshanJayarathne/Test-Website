@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animation</title>
+    <link href="assets/CSS/normalize.css" rel="stylesheet">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="../normalize.css" rel="stylesheet">
+    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
+    <style>
+        section {
+            width: 200px;
+            height: 150px;
+            background-color: red;
+            animation-name: changeColrs;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+        }
+
+        /*@keyframes testOne {
+            from{
+                background-color: green;
+                !*height: 400px;*!
+            }
+            to{
+                background-color: orangered;
+                !*height: 800px;*!
+            }
+        }*/
+        @keyframes changeColrs {
+            0% {
+                background-color: #4d1da7;
+            }
+            25% {
+                background-color: #ff253a;
+            }
+            50% {
+                background-color: orange;
+            }
+            75% {
+                background-color: gray;
+            }
+            100% {
+                background-color: deeppink;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section>
+
+    </section>
+</main>
+</body>
+</html>
