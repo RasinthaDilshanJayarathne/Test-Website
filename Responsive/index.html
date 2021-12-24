@@ -3,16 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <title>Responsive</title>
+    <link href="assets/CSS/normalize.css" rel="stylesheet">
     <link href="../normalize.css" rel="stylesheet">
-    <style>
+    <link href="../fonts/css/all.css" rel="stylesheet">
+    <!--Responsive-->
+    <meta content="width=device-width initial-scale=1" name="viewport">
 
+    <style>
+        /*header start*/
+        header {
+            position: relative;
+            /*x patta / y patta / blue size / kochchra pathirnwda kiyala / colr*/
+            box-shadow: 2px 6px 9px 2px darkgray;
+            height: 80px;
+        }
+
+        header > img {
+            width: 150px;
+            margin: 5px;
+        }
+
+        header > ul {
+            position: absolute;
+            right: 30px;
+            bottom: 0px;
+            top: 10px;
+            margin: auto;
+            height: 40px;
+            font-size: 20px;
+            font-family: 'Lobster', cursive;
+            list-style: none;
+        }
+
+        header > ul > li {
+            padding: 0 10px 0 10px;
+            display: inline-block;
+        }
+
+        header > ul > li:hover {
+            cursor: pointer;
+            color: red;
+        }
+        /*header end*/
+
+        /*main start*/
+        body > main {
+            position: relative;
+        }
+
+        main > nav {
+            width: 230px;
+            background-color: #4d1da7;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            color: white;
+        }
+
+        main > nav > ul {
+            list-style: none;
+            font-size: 22px;
+            margin-top: 35px;
+        }
+
+        main > nav > ul > li {
+            padding: 20px;
+            font-family: 'Lobster', cursive;
+        }
+
+        main > nav > ul > li > a {
+            text-decoration: none;
+            color: #f3f1f1;
+            padding-bottom: 4px;
+            margin-left: 10px;
+            /*border-bottom: 2px solid white;*/
+        }
+
+        main > nav > ul > li > a:hover {
+            color: orange;
+        }
+
+        main > section {
+            margin-left: 230px;
+            padding: 10px;
+            min-height: 600px;
+        }
+
+        main>section>section{
+            height: 250px;
+            position: relative;
+        }
+
+        main>section>section>div{
+            position: absolute;
+            height: 100%;
+            /*funtional notaion*/
+            width: calc(100%/3);
+        }
+
+        main>section>section>div:nth-child(1){
+            left: 0;
+            background: url("../assets/image/3.jpg");
+            background-size: cover;
+        }
+
+        main>section>section>div:nth-child(2){
+            left: calc(100%/3);
+            background: url("../assets/image/8.jpg");
+            background-size: cover;
+        }
+
+        main>section>section>div:nth-child(3){
+            left: calc((100%/3)*2);
+            background: url("../assets/image/5.jpg");
+            background-size: cover;
+        }
+        /*main end*/
+
+        /*footer start*/
+        body>footer{
+            height: 60px;
+            background-color: #696262;
+        }
+
+        body>footer>p{
+            margin-top: 0;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        /*footer end*/
 
     </style>
 </head>
 <body>
-<section>
 
-</section>
+<header>
+    <!--logo-->
+    <img alt="ijse" src="../ijse.png">
+    <ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Contacts</li>
+        <li>About Us</li>
+    </ul>
+</header>
 
+<main>
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i><a href="../index.html">Home</a></li>
+            <li><i class="fas fa-concierge-bell"></i><a href="../table.html">Service</a></li>
+            <li><i class="fas fa-id-badge"></i><a href="../new.html">Contacts</a></li>
+            <li><i class="fas fa-address-card"></i><a href="../newOne.html">About Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <!--full images-->
+        <section>
+            <!--image 1-->
+            <div></div>
+            <!--image 2-->
+            <div></div>
+            <!--image 3-->
+            <div></div>
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque consectetur consequuntur eius eos
+            eveniet ipsum iure magnam mollitia nemo, numquam perferendis quasi velit. Aliquam architecto eius expedita
+            fugit perspiciatis?</p>
+        <p>Aliquid aut autem commodi, consequatur cumque dicta, dolore eius error fugit illum laboriosam laborum maiores
+            modi neque nihil nobis odio officia quis ratione saepe sed sit, sunt tempora velit voluptatibus.</p>
+        <p>Consequuntur, debitis dicta eum odit optio quidem voluptates. Amet aperiam aut earum illo libero minima,
+            natus obcaecati officia optio possimus quam voluptatibus voluptatum. Autem dicta, eaque excepturi illo ipsa
+            totam?</p>
+        <p>Consequuntur, debitis dicta eum odit optio quidem voluptates. Amet aperiam aut earum illo libero minima,
+            natus obcaecati officia optio possimus quam voluptatibus voluptatum. Autem dicta, eaque excepturi illo ipsa
+            totam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque consectetur consequuntur eius eos
+            eveniet ipsum iure magnam mollitia nemo, numquam perferendis quasi velit. Aliquam architecto eius expedita
+            fugit perspiciatis?</p>
+        <p>Aliquid aut autem commodi, consequatur cumque dicta, dolore eius error fugit illum laboriosam laborum maiores
+            modi neque nihil nobis odio officia quis ratione saepe sed sit, sunt tempora velit voluptatibus.</p>
+        <p>Consequuntur, debitis dicta eum odit optio quidem voluptates. Amet aperiam aut earum illo libero minima,
+            natus obcaecati officia optio possimus quam voluptatibus voluptatum. Autem dicta, eaque excepturi illo ipsa
+            totam?</p>
+        <p>Consequuntur, debitis dicta eum odit optio quidem voluptates. Amet aperiam aut earum illo libero minima,
+            natus obcaecati officia optio possimus quam voluptatibus voluptatum. Autem dicta, eaque excepturi illo ipsa
+            totam?</p>
+    </section>
+</main>
+
+<footer>
+    <p><small>Developed By IJSE</small></p>
+</footer>
 </body>
 </html>
