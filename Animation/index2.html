@@ -13,16 +13,19 @@
             width: 200px;
             height: 200px;
             background: #ff253a;
-            animation: test 5s 2;
-            animation-direction: alternate-reverse;
+            animation: test 5s 3;
+            animation-direction: alternate;
+            animation-fill-mode: both;
         }
 
         @keyframes test {
             from{
                 left: 0;
+                background: #4d1da7;
             }
             to{
                 left: 500px;
+                background: yellow;
             }
         }
 
