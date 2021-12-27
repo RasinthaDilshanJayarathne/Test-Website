@@ -8,34 +8,57 @@
     <link href="../normalize.css" rel="stylesheet">
     <link href="assets/css/fonts/css/all.css" rel="stylesheet">
     <style>
-        section{
-            position: relative;
-            width: 200px;
-            height: 200px;
-            background: #ff253a;
-            animation: test 5s 3;
+        section {
+            width: 180px;
+            height: 80px;
+            background: red;
+            border-radius: 30px;
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
             animation-direction: alternate;
-            animation-fill-mode: both;
+            position: relative;
         }
 
-        @keyframes test {
-            from{
+        @keyframes rotate {
+            0% {
                 left: 0;
-                background: #4d1da7;
+                top: 0;
+                transform: rotate(0deg);
+                background: red;
             }
-            to{
-                left: 500px;
-                background: yellow;
+            25% {
+                left: 300px;
+                top: 0;
+                transform: rotate(90deg);
+                background: green;
+            }
+            50% {
+                left: 300px;
+                top: 300px;
+                transform: rotate(180deg);
+                background: orangered;
+            }
+            75% {
+                left: 0;
+                top: 300px;
+                transform: rotate(270deg);
+                background: purple;
+            }
+            100% {
+                left: 0;
+                top: 0;
+                transform: rotate(360deg);
+                background: red;
             }
         }
-
     </style>
 </head>
 <body>
 <main>
-    <section>
+   <section>
 
-    </section>
+   </section>
 </main>
 </body>
 </html>
